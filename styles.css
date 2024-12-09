@@ -1,0 +1,275 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(187, 200, 240);
+  }
+
+  p {
+    text-align: left;
+    font-size: medium;
+  }
+
+  ul {
+    margin: 0;
+  }
+
+  li .dogServices {
+    padding-left: 5px;
+    display: list-item;
+    list-style: square;
+    text-align: left;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even){background-color: #3f9ee1}
+  
+  th {
+    background-color: rgb(6, 6, 176);
+    color: white;
+  }
+
+  header {
+    background-color: #B0C4DE;
+  }
+
+  h2 {
+    color: rgb(2, 70, 137);
+    text-align: left;
+    padding: 5px;
+  }
+
+  h3 {
+    color: black;
+    text-align: center;
+  }
+  
+  .header-content {
+    display: flex;
+    align-items: stretch;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Heading Section */
+  .heading {
+    background-color: #B0C4DE;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .heading h1 {
+    font-size: 36px;
+    margin: 0;
+    color: #243D80;
+  }
+  
+  .heading .subtitle {
+    font-size: 16px;
+    margin: 0;
+    color: #243D80;
+  }
+  
+  /* Navigation Section */
+  .navigation {
+    background-color: #243D80;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    flex: 1;
+    top: 60px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .nav-links li {
+    margin: 0;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px 10px;
+  }
+  
+  .nav-links a:hover {
+    background-color: #1A2D5F;
+    border-radius: 10px;
+  }
+  
+  aside {
+    padding: 5px;
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .column {
+    float: left;
+    width: 33.33%;
+  }
+
+  .CommonFooter {
+    background-color: #B0C4DE;
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+    word-wrap: normal;
+  }
+
+  .footer .copyright {
+    font-size: 16px;
+    margin: 0;
+    text-align: center;
+    color: #243D80;
+  }
+
+  /* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+  
+.hamburger div {
+    width: 30px;
+    height: 4px;
+    background-color: #243D80;
+    margin: 5px 0;
+}
+
+form {
+  width: 100%;
+  text-align: left;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-column {
+  flex: 1;
+  height: auto;
+}
+
+button.submit-button {
+  padding: 12px;
+  background-color: #4c78af;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button.submit-button:hover {
+  background-color: #4551a0;
+}
+
+.main-container {
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px; 
+}
+
+.main-container h2 {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.contactBody p {
+  text-align: center;
+}
+
+.homePage strong {
+  font-size: larger;
+  color: purple;
+}
+
+iframe {
+  width: 100%;
+}
+  
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .navigation {
+        width: 100%;
+        background-color: #243D80;
+        padding: 10px 0;
+    }
+    .nav-links {
+        flex-direction: row;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+    .column {
+      width: 100%;
+    }
+    .form-row {
+      flex-direction: column;
+    }
+    .form-column {
+      min-width: 100%;
+    }
+}      
+@media (max-width: 480px) {
+    .navigation {
+      display: none;
+      width: 100%;
+    }
+  
+    .navigation.responsive {
+      display: block;
+      position: absolute;
+      top: 80px;
+      right: 0;
+      left: 0;
+      background-color: #243D80;
+      text-align: center;
+    }
+  
+    .nav-links {
+      display: block;
+      padding: 10px 0;
+    }
+  
+    .nav-links li {
+      margin: 10px 0;
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+    button.submit-button {
+      width: auto;
+    }
+    p {
+      font-size: large;
+    }
+  }

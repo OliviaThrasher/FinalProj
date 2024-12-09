@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+          <div class="heading">
+            <h1>Scrub-A-Dog</h1>
+            <p class="subtitle"><i>Clean Pets. Clean Owners.</i></p>
+          </div>
+          <button class="hamburger" aria-label="Toggle Navigation">
+            <div></div>
+            <div></div>
+            <div></div>
+          </button>
+          <nav class="navigation">
+            <ul class="nav-links">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="booking.html">Booking</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <img src="images/dog-banner.jpg" alt="Different Types of Dogs" width="100%">
+    </header>          
+    <div class="MainBody">
+        <main class="main-container">
+            <h2>Contact us to book your appointment.</h2>
+            <form method="POST">
+                <div class="form-row">
+                    <div class="form-column">
+                        <fieldset>
+                            <legend><b>Customer Information</b></legend>
+                            <label for="fname">First name:</label><br>
+                            <input type="text" id="fname" name="fname"><br><br>
+                            <label for="lname">Last name:</label><br>
+                            <input type="text" id="lname" name="lname"><br><br>
+                            <label for="pname">Pet's name:</label><br>
+                            <input type="text" id="pname" name="pname"><br><br>
+                            <label for="email">Email:</label><br>
+                            <input type="email" id="email" name="email"><br><br>
+                            <label for="phone">Phone:</label><br>
+                            <input type="tel" id="PhoneNum" name="PhoneNum"><br><br>
+                            <label for="date">Date:</label><br>
+                            <input type="datetime" id="date" name="date"><br><br>
+                        </fieldset>
+                    </div>
+                    <div class="form-column">
+                        <fieldset>
+                            <legend><b>Service Request</b></legend>
+                            <p>I would like the following service:</p>
+                            <input type="radio" id="basic" name="groom_service" value="BASIC">
+                            <label for="basic">Basic Groom</label><br>
+                            <input type="radio" id="full" name="groom_service" value="FULL">
+                            <label for="full">Full Groom</label><br>
+                            <input type="radio" id="pampered" name="groom_service" value="PAMPERED">
+                            <label for="pampered">Pampered Groom</label> <br> <br>
+                            <label for="groomer">Preferred Groomer</label><br>
+                            <select name="groomer" id="groomer">
+                                <option value="any">No preference</option>
+                                <option value="sadie">Sadie Shoals</option>
+                                <option value="karl">Karl Rust</option>
+                                <option value="gill">Gill Lagoon</option>
+                                <option value="coral">Coral Street</option>
+                                <option value="rocky">Rocky Bottoms</option>
+                            </select><br>
+                            <!-- spongebob :) -->
+                            <p>Special requests or instructions</p>
+                            <textarea name="message" rows="10" cols="30"></textarea>
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <br>
+                    <button type="submit" class="submit-button">Submit</button>
+                </div>
+            </form>
+        </main>
+    </div>
+    <div class="CommonFooter">
+        <footer class="footer">
+            <p class="copyright"><b>ⓒ Copyright 2024. All Rights Reserved. <br> contant@polipaws.net </b></p>
+        </footer>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
